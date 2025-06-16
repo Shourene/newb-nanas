@@ -103,7 +103,7 @@ vec3 getSunBloom(float viewDirX, vec3 horizonEdgeCol, vec3 FOG_COLOR) {
 }
 
 
-vec3 renderEndSky(vec3 horizonCol, vec3 zenithCol, vec3 viewDir, float t) {
+vec3 renderEndSky(nl_skycolor skycol, vec3 viewDir, float t){
   t *= 0.1;
   float a = atan2(viewDir.x, viewDir.z);
 
@@ -121,7 +121,7 @@ vec3 renderEndSky(vec3 horizonCol, vec3 zenithCol, vec3 viewDir, float t) {
   float g = h*h;
   g *= g;
 
-  vec3 sky = mix(zenithCol, horizonCol, f*f);
+  vec3 sky = mix(skycol.zenith, skycol.horizon, f*f);
   sky += (0.1*streaks + 2.0*g*g*g + h*h*h)*vec3(2.0,0.5,0.0);
   sky += 0.25*streaks*spectrum(sin(2.0*viewDir.x*viewDir.y+t));
 
@@ -133,7 +133,7 @@ vec3 nlRenderSky(nl_skycolor skycol, nl_environment env, vec3 viewDir, vec3 FOG_
   viewDir.y = -viewDir.y;
 
   if (env.end) {
-    sky = renderEndSky(skycol.horizon, skycol.zenith, viewDir, t);
+    sky = renderEndSky(skycol, viewDir, t);
   } else {
     sky = renderOverworldSky(skycol, viewDir);
     #ifdef NL_RAINBOW

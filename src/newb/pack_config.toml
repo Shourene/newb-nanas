@@ -99,7 +99,7 @@ Box Clouds
 define = "LITE"
 materials = ["Sky", "RenderChunk", "EndSky", "Clouds"]
 description = '''
-No wave
+Lite
 
 §7Simple soft clouds and disable many effects for performance
 '''
@@ -108,7 +108,7 @@ No wave
 define = "OPT"
 materials = ["Sky", "RenderChunk", "EndSky", "Clouds"]
 description = '''
-No wave
+Optimized
 
 §7Disable many effects for performance
 '''
@@ -117,7 +117,7 @@ No wave
 define = "NO_AURORA"
 materials = ["Clouds"]
 description = '''
-No wave
+No aurora
 
 §7Disable aurora at night
 '''
@@ -137,5 +137,5 @@ materials = []
 description = '''
 Default
 
-§7Rounded clouds, aurora at night, the end ground reflection and blackhole
+§7Rounded clouds, aurora at night, shooting star at night, the end ground reflection and blackhole
 '''

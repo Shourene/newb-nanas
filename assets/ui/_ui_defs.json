@@ -1,0 +1,6 @@
+{
+  "ui_defs": [
+    "ui/background_control.def",
+    "ui/background_set.def"
+  ]
+}

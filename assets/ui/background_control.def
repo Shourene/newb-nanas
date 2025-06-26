@@ -1,0 +1,9 @@
+{
+  "namespace": "background_control",
+  "background_image_control": {
+    "type": "image",
+    "fill": true,
+    "texture": "textures/ui/background_image",
+    "uv_size": [ "100%", "100%" ]
+  }
+}

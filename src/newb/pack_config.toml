@@ -1,0 +1,141 @@
+name = "Newb §6Pineapple§r"
+version = [0, 5, 0]
+min_supported_mc_version = [1, 21, 20]
+description = '''
+%v - §c%w§r
+§7Another newb variants to improve your minecraft visual with bright lighting, low saturation, soft shadow, foggy environment and immersive bloom.§r
+''' # %w = patch warning, %v = version
+authors = ["shourene", "devendrn"]
+url = "https://devendrn.github.io/newb-shader/"
+uuid = "e7d443cc-1883-40f5-83b4-ac3a8f71a850" # Use https://www.uuidgenerator.net/version4
+materials = ["Sky", "RenderChunk", "Actor", "ActorGlint", "EndSky", "Clouds", "SunMoon", "Weather", "ItemInHandTextured", "ItemInHandColor", "ItemInHandColorGlint", "Stars"]
+
+[info] 
+copyright = '''
+Copyright © 2025 %a, and "Newb Shader" Contributors
+
+This compiled "Newb Shader" resource pack (source code: https://github.com/devendrn/newb-x-mcbe under MIT License) is licensed under CC BY-ND 4.0 (https://creativecommons.org/licenses/by-nd/4.0/). Redistribute only unmodified copies with proper attribution to "Newb Shader" and variant creators (if any). Do not distribute derivatives.
+
+You can compile the shader from source and distribute the result under your own terms (compatible with the MIT License).
+
+Contact (Discord Server): https://discord.gg/newb-community-844591537430069279
+''' # %a = authors
+credits = '''
+'''
+
+[label]
+text = '''
+§cShaders are not officially supported on Minecraft Bedrock. The following are unofficial ways to load shaders.
+Some devices will experience some cloud bugs§r
+
+Configuration Settings: 
+Recommended set in-game brightness to 40
+Lower render view distance (8-10) for better fog experience
+Don't use experimental features and education mode (or some bugs will occur)
+
+Thank you very much for downloading and using this shader :)§r
+'''
+
+# subpacks are arranged in left to right order
+# right-most subpack is enabled by default
+
+
+[[subpack]]
+define = "REALISTIC"
+materials = ["Clouds"]
+description = '''
+Realistic Clouds
+
+§7Volumetric cloud style without aurora
+'''
+
+[[subpack]]
+define = "FAKE_DEPTH"
+materials = ["RenderChunk", "Actor", "ItemInHandTextured"]
+description = '''
+Fake Depth
+
+§7Enable fake depth effects (may break lighting)
+'''
+
+
+[[subpack]]
+define = "GALAXY"
+materials = ["Sky", "EndSky"]
+description = '''
+Galaxy
+
+§7Galaxy stars at night sky and end sky
+'''
+
+[[subpack]]
+define = "HIGHRES_ROUND"
+materials = ["Clouds"]
+description = '''
+High-res Rounded
+
+§7Rounded clouds in high resolution
+'''
+
+[[subpack]]
+define = "SOFT"
+materials = ["Clouds"]
+description = '''
+Soft Clouds
+
+§7Simple soft clouds with aurora
+'''
+
+[[subpack]]
+define = "BOX"
+materials = ["RenderChunk", "Clouds"]
+description = '''
+Box Clouds
+
+§7Vanilla clouds style with aurora
+
+'''
+[[subpack]]
+define = "LITE"
+materials = ["Sky", "RenderChunk", "EndSky", "Clouds"]
+description = '''
+No wave
+
+§7Simple soft clouds and disable many effects for performance
+'''
+
+[[subpack]]
+define = "OPT"
+materials = ["Sky", "RenderChunk", "EndSky", "Clouds"]
+description = '''
+No wave
+
+§7Disable many effects for performance
+'''
+
+[[subpack]]
+define = "NO_AURORA"
+materials = ["Clouds"]
+description = '''
+No wave
+
+§7Disable aurora at night
+'''
+
+[[subpack]]
+define = "NO_WAVE"
+materials = ["RenderChunk"]
+description = '''
+No wave
+
+§7Disable environment wave effects
+'''
+
+[[subpack]]
+define = "DEFAULT"
+materials = []
+description = '''
+Default
+
+§7Rounded clouds, aurora at night, the end ground reflection and blackhole
+'''

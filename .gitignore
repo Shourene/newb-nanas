@@ -1,0 +1,19 @@
+# ingnore dirs
+build/
+.bak/
+test/
+tool/data/
+tool/lib/
+tool/__pycache__/
+.venv
+venv
+
+# ignore files
+config_backup.h
+note.txt
+copy.sh
+*.bin
+*.py[cod]
+
+# eol
+* text=lf

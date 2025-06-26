@@ -1,0 +1,6 @@
+{
+  "namespace": "start",
+  "start_screen@common.base_screen": {
+    "$screen_bg_content": "background_set.background_image"
+  }
+}
